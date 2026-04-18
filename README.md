@@ -1,4 +1,4 @@
-# E-Commerce AI Agent — GenAI
+# E-Commerce AI Agent
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square)
 ![Gemma](https://img.shields.io/badge/Google_Gemma-3_27B-orange?style=flat-square)
