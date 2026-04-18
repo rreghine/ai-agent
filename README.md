@@ -17,7 +17,7 @@ Agente conversacional de IA para análise de dados de e-commerce com avaliação
 ![Dashboard](preview_agent.PNG)
 
 ### Dashboard de Métricas
-![Métricas](preview_dashboard.png)
+![Métricas](preview_dashboard.PNG)
 
 ---
 
