@@ -47,9 +47,9 @@ Agentes de IA baseados em LLMs são amplamente adotados, mas raramente avaliados
 ```
 ecommerce-ai-agent/
 │
-├── Agent_IA_v2.ipynb          ← Notebook principal (Google Colab)
-├── app_agent.py               ← App Streamlit
-├── knowledge_base.json        ← Base RAG pré-processada
+├── Agent_IA_v2.ipynb          
+├── app_agent.py              
+├── knowledge_base.json       
 ├── requirements.txt
 ├── preview_agent.png
 ├── preview_dashboard.png
