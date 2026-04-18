@@ -1,0 +1,12 @@
+google-genai
+langchain-text-splitters
+langchain-community
+langchain-google-genai
+faiss-cpu
+mlflow
+sentence-transformers
+streamlit==1.32.0
+pandas
+numpy
+matplotlib
+seaborn

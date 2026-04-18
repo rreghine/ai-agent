@@ -1,0 +1,23 @@
+{
+  "documents": [
+    "\nRESUMO GERAL DO DATASET:\n- Total de pedidos: 99,441\n- Total de clientes únicos: 96,096\n- Total de produtos: 32,951\n- Total de vendedores: 3,095\n- Período: 2016 a 2018\n- Ticket médio: R$ 120.65\n- Frete médio: R$ 19.99\n",
+    "\nSTATUS DOS PEDIDOS:\norder_status\ndelivered      96478\nshipped         1107\ncanceled         625\nunavailable      609\ninvoiced         314\nprocessing       301\ncreated            5\napproved           2\n",
+    "\nTOP 10 ESTADOS POR NÚMERO DE PEDIDOS:\ncustomer_state\nSP    41746\nRJ    12852\nMG    11635\nRS     5466\nPR     5045\nSC     3637\nBA     3380\nDF     2140\nES     2033\nGO     2020\n",
+    "\nFORMAS DE PAGAMENTO:\npayment_type\ncredit_card    76795\nboleto         19784\nvoucher         5775\ndebit_card      1529\nnot_defined        3\nMédia de parcelas: 2.9\nValor médio por pedido: R$ 160.99\n",
+    "\nAVALIAÇÕES DOS CLIENTES:\nNota média geral: 4.09 / 5.0\nDistribuição de notas:\nreview_score\n1    11424\n2     3151\n3     8179\n4    19142\n5    57328\n",
+    "\nTOP 10 CATEGORIAS POR RECEITA:\n                                      sum  count\nproduct_category_name_english                   \nhealth_beauty                  1258681.34   9670\nwatches_gifts                  1205005.68   5991\nbed_bath_table                 1036988.68  11115\nsports_leisure                  988048.97   8641\ncomputers_accessories           911954.32   7827\nfurniture_decor                 729762.49   8334\ncool_stuff                      635290.85   3796\nhousewares                      632248.66   6964\nauto                            592720.11   4235\ngarden_tools                    485256.46   4347\n",
+    "\nANÁLISE DE ATRASOS NAS ENTREGAS:\nTaxa geral de atraso: 8.1%\nTop 10 estados com mais atrasos (%):\ncustomer_state\nAL    23.9\nMA    19.7\nPI    16.0\nCE    15.3\nSE    15.2\nBA    14.0\nRJ    13.5\nTO    12.8\nPA    12.4\nES    12.2\n",
+    "\nTOP 10 ESTADOS POR RECEITA DE VENDEDORES:\nseller_state\nSP    8753396.21\nPR    1261887.21\nMG    1011564.74\nRJ     843984.22\nSC     632426.07\nRS     378559.54\nBA     285561.56\nDF      97749.48\nPE      91493.85\nGO      66399.21\n"
+  ],
+  "metricas": {
+    "total_pedidos": 99441,
+    "ticket_medio": 120.65,
+    "nota_media": 4.09,
+    "taxa_atraso": 8.1,
+    "top_categoria": "health_beauty",
+    "categoria_menos": "security_and_services",
+    "top_estado": "SP",
+    "forma_pagamento": "credit_card",
+    "forma_pagamento_menos": "not_defined"
+  }
+}
