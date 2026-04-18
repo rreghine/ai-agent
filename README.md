@@ -14,7 +14,7 @@ Agente conversacional de IA para análise de dados de e-commerce com avaliação
 ## Preview
 
 ### Interface do Agente
-![Dashboard](preview_agent.png)
+![Dashboard](preview_agent.PNG)
 
 ### Dashboard de Métricas
 ![Métricas](preview_dashboard.png)
@@ -34,14 +34,11 @@ Agentes de IA baseados em LLMs são amplamente adotados, mas raramente avaliados
 
 ## Dataset
 
-**Brazilian E-Commerce — Olist (Kaggle)**
+**Brazilian E-Commerce (Kaggle)**
 
 - 99.441 pedidos reais e anonimizados
 - 9 tabelas relacionadas — pedidos, clientes, produtos, vendedores, pagamentos, avaliações
 - Período: 2016 a 2018
-- Contexto 100% brasileiro
-
-[Download do dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
 ---
 
@@ -105,9 +102,9 @@ Compara a resposta do agente com o ground truth calculado diretamente dos dados:
 
 | Status | Critério |
 |---|---|
-| ✅ Correta | Overlap ≥ 50% com o ground truth |
-| ⚠️ Parcial | Overlap entre 25% e 50% |
-| ❌ Alucinação | Overlap < 25% |
+| Correta | Overlap ≥ 50% com o ground truth |
+| Parcial | Overlap entre 25% e 50% |
+| Alucinação | Overlap < 25% |
 
 **Avaliação de Custo por Token**
 
@@ -127,49 +124,7 @@ Rastreia todos os experimentos com parâmetros e métricas:
 - Latência em ms
 - Score de alucinação
 - Custo GPT-4 equivalente
-
----
-
-## Perguntas Suportadas com Ground Truth
-
-| Pergunta | Ground Truth |
-|---|---|
-| Estado com mais pedidos | SP (São Paulo) |
-| Ticket médio | R$ 120,65 |
-| Forma de pagamento mais usada | Cartão de crédito |
-| Nota média de avaliação | 4,09 de 5,0 |
-| Taxa de atraso nas entregas | 8,1% |
-| Categoria com maior receita | Saúde e Beleza |
-| Total de pedidos | 99.441 |
-
----
-
-## Como Executar
-
-```bash
-# 1. Clonar o repositório
-git clone https://github.com/rreghine/ecommerce-ai-agent.git
-cd ecommerce-ai-agent
-
-# 2. Instalar dependências
-pip install -r requirements.txt
-
-# 3. Configurar a API Key
-# Crie um arquivo .streamlit/secrets.toml
-echo 'GEMINI_API_KEY = "sua_key_aqui"' > .streamlit/secrets.toml
-
-# 4. Rodar o app
-streamlit run app_agent.py
-```
-
-> O notebook foi desenvolvido no **Google Colab**. Para rodar localmente, instale as dependências e configure o Google Drive ou coloque os CSVs na pasta `data/`.
-
-### Obtendo a API Key do Google Gemma
-
-1. Acesse [aistudio.google.com](https://aistudio.google.com)
-2. Clique em **"Get API Key"** → **"Create API Key"**
-3. Gratuito — sem necessidade de cartão de crédito
-
+- 
 ---
 
 ## Tecnologias Utilizadas
@@ -185,12 +140,6 @@ streamlit run app_agent.py
 | Rastreamento | MLflow |
 | Deploy | Streamlit |
 | Ambiente | Google Colab |
-
----
-
-## Próximos Passos — Parte 2
-
-Benchmark multi-modelo comparando Google Gemma, Meta LLaMA, xAI Grok e Anthropic Claude sobre o mesmo agente e dataset — com métricas de qualidade, custo e latência lado a lado.
 
 ---
 
